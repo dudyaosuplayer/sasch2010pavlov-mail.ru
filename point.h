@@ -11,9 +11,9 @@ public:
     Point();
     Point(int x2, int y2);
     Point(const Point &p);
-    void print();
-    int getx ();
-    int gety ();
+    void print() const;
+    int getx () const;
+    int gety () const;
     void setx (int);
     void sety (int);
 };
