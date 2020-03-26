@@ -10,7 +10,7 @@ Point::Point (int x2, int y2)
 };
 Point::Point(const Point &p):Point(p.x, p.y){}
 
-void Point :: print()
+void Point :: print() const
 {
     cout <<endl <<"X: " << x << endl <<"Y: " << y <<endl;
 
@@ -26,11 +26,11 @@ void Point :: sety (int y2)
     y = y2;
 
 }
-int Point :: getx()
+int Point :: getx() const
 {
     return x;
 }
-int Point :: gety()
+int Point :: gety() const
 {
     return y;
 }
