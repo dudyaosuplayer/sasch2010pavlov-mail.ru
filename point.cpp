@@ -8,10 +8,7 @@ Point::Point (int x2, int y2)
    sety(y2);
    setx(x2);
 };
-Point::Point(const Point &p):Point(p.x, p.y)
-{
-   cout << "Copy constructor worked here!\n";
-}
+Point::Point(const Point &p):Point(p.x, p.y){}
 
 void Point :: print()
 {
