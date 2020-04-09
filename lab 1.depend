@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1586449285 source:d:\codeblock\lab 1 gaychuk\main.cpp
+	<iostream>
+	"point.h"
+
+1586456214 d:\codeblock\lab 1 gaychuk\point.h
+	<iostream>
+	<windows.h>
+	<cstdlib>
+	<conio.h>
+
+1586449291 source:d:\codeblock\lab 1 gaychuk\point.cpp
+	"point.h"
+	<iostream>
+
