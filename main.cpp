@@ -6,10 +6,13 @@ int main()
 {
     int n;
     int a = 10;
+    a += 1;
+    cout << a;
     cout << "Enter integer value n:";
-   /* cin >> n;*/
+    cin >> n;
     Point p(10, 10);
     Point p1;
+    Point p4(5, 5);
     cout << "p: ";
     p.print();
     cout << "p1: ";
@@ -17,16 +20,16 @@ int main()
     p1.sety(11);
     p1.print();
     Point p2 = p + p1;
-    cout << " (+) " << "p2: " << p2<< "\n";
+    cout << " (+) " << "p2: " << p2 << "\n";
     Point p3 = p - p1;
     cout << " (-) " << "p3: " << p3 << "\n";
-    p += p2;
+    p += n;
     cout << " (+=)" << "p: " << p << "\n";
-    p -= p1;
+    p -= n;
     cout << " (-=)" << "p: " << p << "\n";
-    p *= p3;
+    p *= n;
     cout << " (*=)" << "p: " << p << "\n";
-    p /= p1;
+    p /= n;
     cout << " (/=)" << "p: " << p << "\n";
     if((p > p1)== true)
         cout << " (<>) " << "p > p1";

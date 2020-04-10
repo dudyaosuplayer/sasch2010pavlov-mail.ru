@@ -31,9 +31,9 @@ public:
     friend istream& operator>> (istream &in, Point &p);
     Point operator+ (const Point &p);
     Point operator- (const Point &p);
-    Point &operator+= (const Point &p);
-    Point &operator-= (const Point &p);
-    Point &operator*= (const Point &p);
-    Point &operator/= (const Point &p);
+    Point &operator+= (const int n);
+    Point &operator-= (const int n);
+    Point &operator*= (const int n);
+    Point &operator/= (const int n);
 };
 #endif // POINT_H_INCLUDED
