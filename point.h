@@ -9,6 +9,7 @@ using namespace std;
 class Point
 {
 int x, y, n;
+int a = 10;
 public:
 
     Point();
@@ -28,11 +29,11 @@ public:
     Point &operator= (Point & p);
     friend ostream& operator<< (ostream &out, const Point &p);
     friend istream& operator>> (istream &in, Point &p);
-    Point operator+ (const Point &p, const Point &p1);
-    Point operator- (const Point &p, const Point &p1);
-    Point operator+= (const Point &p, int n);
-    Point operator-= (const Point &p, int n);
-    Point operator*= (const Point &p, int n);
-    Point operator/= (const Point &p, int n);
+    Point operator+ (const Point &p);
+    Point operator- (const Point &p);
+    Point &operator+= (const Point &p);
+    Point &operator-= (const Point &p);
+    Point &operator*= (const Point &p);
+    Point &operator/= (const Point &p);
 };
 #endif // POINT_H_INCLUDED

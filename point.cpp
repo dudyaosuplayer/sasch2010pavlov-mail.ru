@@ -86,46 +86,40 @@ istream& operator>> (istream &in, Point &p)
     in >> p.x;
     return  in;
 }
-Point :: operator+ (const Point &p, const Point &p1)
+Point Point :: operator+ (const Point &p)
 {
-  Point p2;
-  p2.x = p1.x + p.x;
-  p2.y = p1.y + p.y;
-  return p2;
+    this-> x = this -> x + p.x;
+    this-> y = this -> y + p.y;
+  return *this;
 }
- Point :: operator- (const Point &p, const Point &p1)
+ Point Point :: operator- (const Point &p)
 {
-  Point p3;
-  p3.x = p.x - p1.x;
-  p3.y = p.y - p1.y;
-  return p3;
+    this-> x = this -> x - p.x;
+    this-> y = this -> y - p.y;
+  return *this;
 }
-Point :: operator+= (const Point &p, int n)
+Point &Point :: operator+= (const Point &p)
 {
-    Point p4;
-    p4.x = p.x + n;
-    p4.y = p.y + n;
-    return p4;
+    this-> x = this -> x + p.x;
+    this-> y = this -> y + p.y;
+    return *this;
 }
-Point :: operator-= (const Point &p, int n)
+Point &Point :: operator-= (const Point &p)
 {
-    Point p5;
-    p5.x = p.x - n;
-    p5.y = p.y - n;
-    return p5;
+    this-> x = this -> x - p.x;
+    this-> y = this -> y - p.y;
+    return *this;
 }
-Point :: operator*= (const Point &p, int n)
+Point &Point :: operator*= (const Point &p)
 {
-    Point p6;
-    p6.x = p.x * n;
-    p6.y = p.y * n;
-    return p6;
+    this-> x = this -> x * p.x;
+    this-> y = this -> y * p.y;
+    return *this;
 }
-Point :: operator/= (const Point &p, int n)
+Point &Point :: operator/= (const Point &p)
 {
-    Point p7;
-    p7.x = p.x / n;
-    p7.y = p.y / n;
-    return p7;
+    this-> x = this -> x / p.x;
+    this-> y = this -> y / p.y;
+    return *this;
 }
 
