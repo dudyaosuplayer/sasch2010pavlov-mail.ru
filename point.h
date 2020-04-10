@@ -28,11 +28,11 @@ public:
     Point &operator= (Point & p);
     friend ostream& operator<< (ostream &out, const Point &p);
     friend istream& operator>> (istream &in, Point &p);
-    friend Point operator+ (const Point &p, const Point &p1);
-    friend Point operator- (const Point &p, const Point &p1);
-    friend Point operator+= (const Point &p, int n);
-    friend Point operator-= (const Point &p, int n);
-    friend Point operator*= (const Point &p, int n);
-    friend Point operator/= (const Point &p, int n);
+    Point operator+ (const Point &p, const Point &p1);
+    Point operator- (const Point &p, const Point &p1);
+    Point operator+= (const Point &p, int n);
+    Point operator-= (const Point &p, int n);
+    Point operator*= (const Point &p, int n);
+    Point operator/= (const Point &p, int n);
 };
 #endif // POINT_H_INCLUDED
